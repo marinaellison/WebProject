@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hotel Blue Wave — Luxury by the Ocean</title>
+  <link href="assets/images/logo.ico" type="image/x-icon" rel="icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/index_styles.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="logo">
+      <a href="index.html">
+      <img src="assets/images/logo.png" alt="Hotel Blue Wave Logo" width="140px">
+      </a>
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="rooms.html">Rooms</a></li>
+      <li><a href="compare.html">Compare</a></li>
+      <li><a href="amenities.html">Amenities</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="bookingForm.html" class="book-btn">Book Now</a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Tofino, Canada</p>
+      <h1>Luxury Stays<br>by the <em>Ocean</em></h1>
+      <p>Where the Pacific Ocean meets timeless elegance</p>
+      <div class="booking-bar">
+        <div class="booking-field">
+          <label for="check-in">Check In</label>
+          <input type="date" id="check-in">
+        </div>
+        <div class="booking-field">
+          <label for="check-out">Check Out</label>
+          <input type="date" id="check-out">
+        </div>
+        <div class="booking-field">
+          <label for="guests">Guests</label>
+          <select id="guests">
+            <option value="">Select</option>
+            <option>1 Adult</option>
+            <option>2 Adults</option>
+            <option>2 Adults, 1 Child</option>
+            <option>Family (4+)</option>
+          </select>
+        </div>
+        <div class="booking-field">
+          <label for="room-type">Room Type</label>
+          <select id="room-type">
+            <option value="">Any Room</option>
+            <option value = "Deluxe Room">Deluxe Suite</option>
+            <option value = "Executive Suite">Executive Suite</option>
+            <option value = "Presidential Suite">Presidential Suite</option>
+            <option value = "Family Room">Family Room</option>
+          </select>
+        </div>
+        <button class="search-btn">Check Availability</button>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <div class="line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <div class="features">
+    <div class="feature-item">
+      <div class="feature-icon">&#127754;</div>
+      <h3>Beachfront Location</h3>
+      <p>Step directly onto pristine white sands from our private beach access.</p>
+    </div>
+    <div class="feature-item">
+      <div class="feature-icon">&#127869;&#65039;</div>
+      <h3>Fine Dining</h3>
+      <p>Enjoy ocean-view dining featuring fresh Pacific seafood and locally inspired Canadian cuisine.</p>
+    </div>
+    <div class="feature-item">
+      <div class="feature-icon">&#129494;</div>
+      <h3>Wellness Spa</h3>
+      <p>Relax and recharge with nature-inspired treatments designed around West Coast wellness traditions.</p>
+    </div>
+    <div class="feature-item">
+      <div class="feature-icon">&#128677;&#65039;</div>
+      <h3>Water Sports</h3>
+      <p>Surfing, diving, whale watching and scenic coastal hikes available daily.</p>
+    </div>
+  </div>
+
+  <!-- ROOMS -->
+  <section class="rooms">
+    <div class="rooms-header">
+      <p class="section-label">Accommodations</p>
+      <h2 class="section-title">Our <em>Finest</em> Rooms &amp; Suites</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="rooms-grid">
+      <div class="room-card">
+        <div class="room-img"><img src="assets/images/oceanSuite.jpg" alt="Ocean View Suite"></div>
+        <div class="room-info">
+          <p class="room-type">Deluxe</p>
+          <h3>Deluxe Suite</h3>
+          <p>Floor-to-ceiling windows frame the Pacific Ocean. Private balcony, king bed, marble bath.</p>
+          <div class="room-footer">
+            <div class="room-price">$120 <span>/ night</span></div>
+            <a href="rooms.html" class="room-btn">View Details &rarr;</a>
+          </div>
+        </div>
+      </div>
+      <div class="room-card">
+        <div class="room-img"><img src="assets/images/jrSuite.webp" alt="Deluxe Room"></div>
+        <div class="room-info">
+          <p class="room-type">Executive</p>
+          <h3>Executive Suite</h3>
+          <p>Lush tropical garden views, rain shower, curated minibar and all-day butler service.</p>
+          <div class="room-footer">
+            <div class="room-price">$150 <span>/ night</span></div>
+            <a href="rooms.html" class="room-btn">View Details &rarr;</a>
+          </div>
+        </div>
+      </div>
+      <div class="room-card">
+        <div class="room-img"><img src="assets/images/presidentialSuite.jpg" alt="Beach Villa"></div>
+        <div class="room-info">
+          <p class="room-type">Presidential</p>
+          <h3>Presidential Suite</h3>
+          <p>Your own slice of paradise - private pool, direct beach path, dedicated concierge.</p>
+          <div class="room-footer">
+            <div class="room-price">$180 <span>/ night</span></div>
+            <a href="rooms.html" class="room-btn">View Details &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <div class="experience">
+    <div class="exp-image"><img src="assets/images/homecontent.png" alt="Hotel Experience"></div>
+    <div class="exp-content">
+      <p class="section-label">The Blue Wave Story</p>
+      <h2 class="section-title">More than a stay,<br><em>a memory</em></h2>
+      <div class="divider"></div>
+      <p>Nestled along British Columbia's rugged west coast, Hotel Blue Wave is a sanctuary where the rhythm of the ocean sets the pace of life.</p>
+      <p>For over two decades we have curated experiences that blend warm Canadian hospitality with refined coastal luxury.</p>
+      <ul class="exp-list">
+        <li>Award-winning Wellness spa &amp; relaxation centre</li>
+        <li>Three oceanfront dining venues</li>
+        <li>PADI certified dive school on-site</li>
+        <li>Intimate wedding &amp; private coastal events</li>
+      </ul>
+      <a href="about.html" class="cta-btn">Discover Our Story</a>
+    </div>
+  </div>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials">
+    <p class="section-label">Guest Stories</p>
+    <h2 class="section-title">What our guests <em>say</em></h2>
+    <div class="divider"></div>
+    <div class="testi-grid">
+      <div class="testi-card">
+        <div class="quote-mark">"</div>
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>Waking up to that ocean view every morning was absolutely breathtaking. The staff remembered our anniversary and surprised us with flowers.</p>
+        <div class="testi-author">
+          <div class="testi-avatar"><img src="assets/images/guest-sarah.avif" alt="Sarah Mitchell"></div>
+          <div><div class="testi-name">Sarah Mitchell</div><div class="testi-loc">London, UK</div></div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="quote-mark">"</div>
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>The Wellness spa alone is worth the trip. We extended our stay twice - something we have never done in 20 years of travelling.</p>
+        <div class="testi-author">
+          <div class="testi-avatar"><img src="assets/images/guest-kenji.avif" alt="Kenji Tanaka"></div>
+          <div><div class="testi-name">Kenji Takeshi</div><div class="testi-loc">Tokyo, Japan</div></div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="quote-mark">"</div>
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>Hosted our family reunion here for 18 people. The events team handled every detail flawlessly. Truly a magical experience.</p>
+        <div class="testi-author">
+          <div class="testi-avatar"><img src="assets/images/guest-priya.avif" alt="Priya Nair"></div>
+          <div><div class="testi-name">Priya Nair</div><div class="testi-loc">Dubai, UAE</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <div class="gallery">
+    <div class="gallery-item"><img src="assets/images/lobby.png" alt="Hotel lobby"></div>
+    <div class="gallery-item"><img src="assets/images/hoteltemple.png" alt="Temple"></div>
+    <div class="gallery-item"><img src="assets/images/fountain.png" alt="Fountain"></div>
+    <div class="gallery-item"><img src="assets/images/hotelspa.png" alt="Hotel Spa"></div>
+    <div class="gallery-item"><img src="assets/images/outside.png" alt="Hotel View"></div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/images/logo.png" alt="Hotel Blue Wave Logo" class="footer-logo">
+        <p>A luxury ocean retreat on the west coast of Canada. Where every wave tells a story.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="rooms.html">Rooms &amp; Suites</a></li>
+          <li><a href="#">Dining</a></li>
+          <li><a href="amenities.html">Spa &amp; Wellness</a></li>
+          <li><a href="#">Water Sports</a></li>
+          <li><a href="#">Weddings</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Hotel</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="references.html">References</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="#">&#128205; 123 Address Lane, Tofino, BC<br> V5K 1A1</a></li>
+          <li><a href="#">&#128222; +1 236 223 4567</a></li>
+          <li><a href="#">&#9993;&#65039; hello@hotelbluewave.ca</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Hotel Blue Wave. All rights reserved.</span>
+      <span id="dateTime"></span>
+    </div>
+  </footer>
+
+  <script src="assets/js/index.js"></script>
+</body>
+</html>
